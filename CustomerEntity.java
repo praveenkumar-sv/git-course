@@ -1,26 +1,49 @@
 public class CustomerEntity {
-    
-    private String name;
-    private String email;
+  private String name;
+  private String email;
+    private int age;
+    private String address;
+    private String phoneNumber;
 
-    public CustomerEntity(String name, String email) {
+    public CustomerEntity(String name, String email, int age, String address, String phoneNumber) {
         this.name = name;
         this.email = email;
+        this.age = age;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
     }
-
-    public String getName() {
+   
+    public int getAge() {
+        return age;
+    }
+public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getEmail() {
         return email;
     }
 
+    public String getAddress() {
+        return address;
+    }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
     public void setEmail(String email) {
         this.email = email;
     }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    
 }
