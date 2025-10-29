@@ -4,13 +4,15 @@ public class CustomerEntity {
     private int age;
     private String address;
     private String phoneNumber;
+    private String customerId;
 
-    public CustomerEntity(String name, String email, int age, String address, String phoneNumber) {
+    public CustomerEntity(String name, String email, int age, String address, String phoneNumber, String customerId) {
         this.name = name;
         this.email = email;
         this.age = age;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.customerId = customerId;
     }
    
     public int getAge() {
@@ -29,6 +31,9 @@ public String getName() {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -44,6 +49,8 @@ public String getName() {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
+public String getCustomerId() {
+        return customerId;
+    }
     
 }
